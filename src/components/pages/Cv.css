@@ -1,0 +1,29 @@
+:root {
+    --primary: #fff;
+}
+
+.pdf-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* width: 400px; */
+}
+
+.pdf-viewer {
+    outline: thick double #32a1ce;
+}
+
+.download-button {
+    position: fixed;
+    top: 900px;
+    right: 550px;
+    cursor: pointer;
+    background: transparent;
+    border-style: none;
+}
+
+.hidden {
+    display: none;
+}
