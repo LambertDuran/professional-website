@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/react-app/static/css/main.5b0c51c9.css",
+    "main.js": "/react-app/static/js/main.af80bbc3.js",
+    "static/media/couches_geo.gif": "/react-app/static/media/couches_geo.37fd5f851013f0cc82ae.gif",
+    "static/media/Rapport_PFE.pdf": "/react-app/static/media/Rapport_PFE.a91b1c5ede6bd8f1c42e.pdf",
+    "static/media/lidar.webp": "/react-app/static/media/lidar.c9fef6984245cd05bd5a.webp",
+    "static/media/pointcloud.webp": "/react-app/static/media/pointcloud.05c10b004d8943256e6f.webp",
+    "static/media/CV_Lambert_Duran.pdf": "/react-app/static/media/CV_Lambert_Duran.109dd206fcc13d09b895.pdf",
+    "static/media/importShape.webp": "/react-app/static/media/importShape.8e7fea82c0f3505871aa.webp",
+    "static/media/lusageDuMonde.webp": "/react-app/static/media/lusageDuMonde.daa6e393a5f4372bb788.webp",
+    "static/media/moto3.webp": "/react-app/static/media/moto3.3788b4f51ef7e42593f2.webp",
+    "static/media/MaterialIcons-Regular.eot": "/react-app/static/media/MaterialIcons-Regular.4674f8ded773cb03e824.eot",
+    "static/media/moto2.webp": "/react-app/static/media/moto2.6c82fb82adef55b0c81f.webp",
+    "static/media/cloud.webp": "/react-app/static/media/cloud.40fdd917b346bb66f4f7.webp",
+    "static/media/moto4.webp": "/react-app/static/media/moto4.e45344a22e913990c4ac.webp",
+    "static/media/moto1.webp": "/react-app/static/media/moto1.94fcdeaec6cedb1201de.webp",
+    "static/media/MaterialIcons-Regular.ttf": "/react-app/static/media/MaterialIcons-Regular.5e7382c63da0098d634a.ttf",
+    "static/media/moto6.webp": "/react-app/static/media/moto6.79d570748763e1511b97.webp",
+    "static/media/riga.webp": "/react-app/static/media/riga.2d1bb707e7f2acdd643f.webp",
+    "static/media/moto5.webp": "/react-app/static/media/moto5.08b161d83bf5fdfa1e9f.webp",
+    "static/media/lesSecretsDeLaMerRouge.webp": "/react-app/static/media/lesSecretsDeLaMerRouge.2304ff2b8a00afe41bad.webp",
+    "static/media/MaterialIcons-Regular.woff": "/react-app/static/media/MaterialIcons-Regular.83bebaf37c09c7e1c3ee.woff",
+    "static/media/madagascar.webp": "/react-app/static/media/madagascar.b66d21bf3112086a56fe.webp",
+    "static/media/MaterialIcons-Regular.woff2": "/react-app/static/media/MaterialIcons-Regular.cff684e59ffb052d72cb.woff2",
+    "static/media/lesCavaliers.webp": "/react-app/static/media/lesCavaliers.7c2a4420d5edc03f16d0.webp",
+    "static/media/wallpaper.webp": "/react-app/static/media/wallpaper.fdeedfd24c4735f70171.webp",
+    "static/media/riga2.webp": "/react-app/static/media/riga2.beca4e6bfcee597a7b23.webp",
+    "static/media/pcl.webp": "/react-app/static/media/pcl.c6a70c09a4989b8790fe.webp",
+    "static/media/cerveau.webp": "/react-app/static/media/cerveau.2b03d5027ba5b52f25d8.webp",
+    "index.html": "/react-app/index.html",
+    "main.5b0c51c9.css.map": "/react-app/static/css/main.5b0c51c9.css.map",
+    "main.af80bbc3.js.map": "/react-app/static/js/main.af80bbc3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b0c51c9.css",
+    "static/js/main.af80bbc3.js"
+  ]
+}
