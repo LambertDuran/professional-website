@@ -11,6 +11,15 @@ import pcl from '../../images/pcl.webp'
 
 import pfe_rapport from '../../pdf/Rapport_PFE.pdf'
 
+function displayPrimitves(point, nbPoints)
+{
+    var points = [];
+    for(let i = 0; i < nbPoints; i++)
+    points.push(point)
+
+    return <>{points} </>
+}
+
 function displayDates() {
     var point = (
         <div className="exp-circles">
@@ -29,55 +38,16 @@ function displayDates() {
             {point}
             {arrow}
             <div className="exp-dates">Septembre 2017</div>
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
+            {displayPrimitves(point, 8)}
             <div className="exp-dates">Janvier 2018</div>
             {arrow}
             <div className="exp-dates">Février 2018</div>
-            {point}
-            {point}
+            {displayPrimitves(point, 2)}
             <div className="exp-dates">Juillet 2018</div>
             {arrow}
             <div className="exp-dates">Octobre 2018</div>
             {}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
-            {point}
+            {displayPrimitves(point, 31)}
             <div className="exp-dates">Novembre 2020</div>
             {arrow}
         </>
