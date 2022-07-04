@@ -87,15 +87,12 @@ export default function Hobbies() {
             </div>
             <div className="hobbies-text">
                 {'\u2022 '}
-                <Link
-                    to={{
-                        pathname:
-                            'https://www.franceculture.fr/emissions/les-pieds-sur-terre',
-                    }}
+                <a
+                    href='https://www.franceculture.fr/emissions/les-pieds-sur-terre'
                     target="_blank"
                 >
                     Les pieds sur Terre :
-                </Link>{' '}
+                </a>{' '}
                 Emission sociologique de France Culture où les locuteurs
                 détaillent un fait marquant de leur vie. "Mon histoire d'amour
                 durant le confinement", ou bien "Le jour où j'ai assisté à un
@@ -104,15 +101,12 @@ export default function Hobbies() {
             </div>
             <div className="hobbies-text">
                 {'\u2022 '}
-                <Link
-                    to={{
-                        pathname:
-                            'http://rendezvousavecmrx.free.fr/page/liste.php',
-                    }}
+                <a
+                    href='http://rendezvousavecmrx.free.fr/page/liste.php'
                     target="_blank"
                 >
                     Rendez-vous avec X :
-                </Link>{' '}
+                </a>{' '}
                 Entretien par Patrick Pesnot de 'Monsieur X', ancien agent de la
                 DGSE. Monsieur X revient sur des histoires d'espionnage et des
                 affaires secrètes dans lesquelles se jouent l'histoire de nos
@@ -120,14 +114,12 @@ export default function Hobbies() {
             </div>
             <div className="hobbies-text">
                 {'\u2022 '}
-                <Link
-                    to={{
-                        pathname: 'https://www.youtube.com/c/thinkerview',
-                    }}
+                <a
+                    href='https://www.youtube.com/c/thinkerview'
                     target="_blank"
                 >
                     Thinkerview :
-                </Link>{' '}
+                </a>{' '}
                 Chaîne YouTube recevant des journalistes, des diplomates, des
                 lanceurs d'aleter etc .. Ils sont invités à s'exprimer sur des
                 sujets d'actualité. Dans une société où le temps est compté, ce
@@ -137,15 +129,12 @@ export default function Hobbies() {
             </div>
             <div className="hobbies-text">
                 {'\u2022 '}
-                <Link
-                    to={{
-                        pathname:
-                            'https://open.spotify.com/show/6NsIUcTCFBIPT7TxP87zdF',
-                    }}
+                <a
+                    href = 'https://open.spotify.com/show/6NsIUcTCFBIPT7TxP87zdF'
                     target="_blank"
                 >
                     Les Baladeurs :
-                </Link>{' '}
+                </a>{' '}
                 Une série 'Les others', des histoires et des aventures en pleine
                 nature.
             </div>
