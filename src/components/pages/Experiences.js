@@ -8,14 +8,15 @@ import mada from '../../images/madagascar.webp'
 import lidar from '../../images/lidar.webp'
 import pointCloud from '../../images/pointcloud.webp'
 import pcl from '../../images/pcl.webp'
+import geoCouche from '../../images/geocouche.webp'
+import geoCoupe from '../../images/geocoupe.webp'
 
 import pfe_rapport from '../../pdf/Rapport_PFE.pdf'
 
-function displayPrimitves(point, nbPoints)
-{
+function displayPrimitves(point, nbPoints) {
     var points = [];
-    for(let i = 0; i < nbPoints; i++)
-    points.push(point)
+    for (let i = 0; i < nbPoints; i++)
+        points.push(point)
 
     return <>{points} </>
 }
@@ -46,10 +47,11 @@ function displayDates() {
             <div className="exp-dates">Juillet 2018</div>
             {arrow}
             <div className="exp-dates">Octobre 2018</div>
-            {}
             {displayPrimitves(point, 31)}
-            <div className="exp-dates">Novembre 2020</div>
+            <div className="exp-dates">Janvier 2021</div>
             {arrow}
+            {displayPrimitves(point, 30)}
+            <div className="exp-dates">Maintenant</div>
         </>
     )
 }
@@ -80,34 +82,33 @@ function displayPointCloud(dates) {
             </figure>
         </div>
     ) : (
-        <>
-            <div className="exp-subStories">
-                <figure className="exp-img-figure">
-                    <img
-                        className="exp-img-lidar"
-                        src={lidar}
-                        alt="Exemple de lidar"
-                    ></img>
-                    <figcaption className="exp-caption">
-                        Fonctionnement illustratif du Lidar.
+            <>
+                <div className="exp-subStories">
+                    <figure className="exp-img-figure">
+                        <img
+                            className="exp-img-lidar"
+                            src={lidar}
+                            alt="Exemple de lidar"
+                        ></img>
+                        <figcaption className="exp-caption">
+                            Fonctionnement illustratif du Lidar.
                     </figcaption>
-                </figure>
-            </div>
-            <div className="exp-subStories">
-                <figure className="exp-img-figure">
-                    <img
-                        className="exp-img-logiciel"
-                        src={pointCloud}
-                        alt="Chargement dans le logiciel"
-                        caption="Test"
-                    ></img>
-                    <figcaption className="exp-caption">
-                        Affichage d'un nuage de points dans GStarCad.
+                    </figure>
+                </div>
+                <div className="exp-subStories">
+                    <figure className="exp-img-figure">
+                        <img
+                            className="exp-img-logiciel"
+                            src={pointCloud}
+                            alt="Chargement dans le logiciel"
+                        ></img>
+                        <figcaption className="exp-caption">
+                            Affichage d'un nuage de points dans GStarCad.
                     </figcaption>
-                </figure>
-            </div>
-        </>
-    )
+                    </figure>
+                </div>
+            </>
+        )
 }
 
 function Experiences() {
@@ -317,69 +318,109 @@ function Experiences() {
                             alt="Logo de pcl"
                         ></img>
                     </div>
-                    <p className="exp-text">
-                        {'\u2022 '} Compiler la librairie C++ Open Source de
-                        nuages de points <strong>PCL</strong> et essayer de
-                        charger des nuages de points dans le logiciel pour
-                        vérifier que l'affichage et le temps de réaction soient
-                        corrects. Suite à cette première validation, j'ai mis en
-                        place un algorithme de préparation de données afin de
-                        convertir des données clients au format .laz vers des
-                        données au format .pcd pour afficher les nuages dans
-                        GStarCAD. Ensuite j'ai développé un objet "PointCloud"
-                        permettant de charger des données dans GStarCAD puis de
-                        modifier la couleurs des points, d'effectuer des coupes
-                        dans le nuage, de faire des recherches spécifiques etc
-                        ...
+                    <div className="exp-subStories-test">
+                        <p className="exp-text">
+                            {'\u2022 '} Compiler la librairie C++ Open Source de
+                            nuages de points <strong>PCL</strong> et essayer de
+                            charger des nuages de points dans le logiciel pour
+                            vérifier que l'affichage et le temps de réaction soient
+                            corrects. Suite à cette première validation, j'ai mis en
+                            place un algorithme de préparation de données afin de
+                            convertir des données clients au format .laz vers des
+                            données au format .pcd pour afficher les nuages dans
+                            GStarCAD. Ensuite j'ai développé un objet "PointCloud"
+                            permettant de charger des données dans GStarCAD puis de
+                            modifier la couleurs des points, d'effectuer des coupes
+                            dans le nuage, de faire des recherches spécifiques etc
+                            ...
                     </p>
-                    <p className="exp-text">
-                        {'\u2022 '} Six mois plus tard, les tests d'intégration
+                        <p className="exp-text">
+                            {'\u2022 '} Six mois plus tard, les tests d'intégration
                         de l'objet nuage étant concluants, j'ai{' '}
-                        <strong>
-                            recruté trois développeurs et un alternant
+                            <strong>
+                                recruté trois développeurs et un alternant
                         </strong>{' '}
-                        malgache. Le but de cette équipe était notamment
-                        d'accompagner la croissance et le développement de
-                        l'entreprise en mettant en place de nouvelles méthodes
-                        techniques de dessin et de contrôle qualité.
+                            malgache. Le but de cette équipe était notamment
+                            d'accompagner la croissance et le développement de
+                            l'entreprise en mettant en place de nouvelles méthodes
+                            techniques de dessin et de contrôle qualité.
                     </p>
-                    <p className="exp-text">
-                        {'\u2022 '} La seconde année de mon VIE j'avais à la
+                        <p className="exp-text">
+                            {'\u2022 '} La seconde année de mon VIE j'avais à la
                         fois une position de <strong>leader technique</strong>{' '}
-                        et d'
+                            et d'
                         <strong>encadrant / manager</strong> des projets,
-                        c'est-à-dire que je faisais le pont entre les demandes
-                        des chefs de départements en production et les
-                        développeurs. Je m'occupais notamment de la
+                            c'est-à-dire que je faisais le pont entre les demandes
+                            des chefs de départements en production et les
+                            développeurs. Je m'occupais notamment de la
                         <strong> planification</strong> sur le long terme des
-                        projets (sur plusieurs mois). Je programmais des sprints
-                        de l'ordre de deux semaines et tous les matins
-                        j'organisais le déroulement d'une petite réunion d'une
-                        dizaine de minutes où l'équipe abordait les problèmes
-                        sur lesquels elle avait travaillé. Je mettais en place
+                            projets (sur plusieurs mois). Je programmais des sprints
+                            de l'ordre de deux semaines et tous les matins
+                            j'organisais le déroulement d'une petite réunion d'une
+                            dizaine de minutes où l'équipe abordait les problèmes
+                            sur lesquels elle avait travaillé. Je mettais en place
                         également <strong>les dépôts Git</strong> pour que la
-                        collaboration de l'équipe se déroule au mieux. Enfin
-                        j'avais mis en place également une documentation
-                        Développeur ET Utilisateur pour qu'il y ait une trace
-                        des fonctionnements de chaque commande.
+                            collaboration de l'équipe se déroule au mieux. Enfin
+                            j'avais mis en place également une documentation
+                            Développeur ET Utilisateur pour qu'il y ait une trace
+                            des fonctionnements de chaque commande.
                     </p>
-                    <p className="exp-text">
-                        En paralèle de l'équipe de développeurs C++,{' '}
-                        <strong> j'encadrais un développeur Python</strong> qui
-                        avait développé avec TensorFlow un algorithme de
-                        reconnaissance d'images. Lorsque certaines équipes de
-                        production étaient en "sous-charge" de travail, en
-                        attendant que la charge soit rétablie l'équipe réalisait
-                        de l'annotation d'images. Cela consistait à tracer des
-                        "Bounding Box" sur des objets ponctuels tels que les
-                        bouches à clefs, les regards, les bornes à incendie
-                        etc... Cependant la précision exigée par les clients ne
-                        nous permettaient pas d'utiliser l'algorithme de deep
-                        learning pour du dessin pure mais plutôt pour effectuer
-                        un contrôle entre les objets détectés et ceux dessinés
-                        en prodution.
+                        <p className="exp-text">
+                            En paralèle de l'équipe de développeurs C++,{' '}
+                            <strong> j'encadrais un développeur Python</strong> qui
+                            avait développé avec TensorFlow un algorithme de
+                            reconnaissance d'images. Lorsque certaines équipes de
+                            production étaient en "sous-charge" de travail, en
+                            attendant que la charge soit rétablie l'équipe réalisait
+                            de l'annotation d'images. Cela consistait à tracer des
+                            "Bounding Box" sur des objets ponctuels tels que les
+                            bouches à clefs, les regards, les bornes à incendie
+                            etc... Cependant la précision exigée par les clients ne
+                            nous permettaient pas d'utiliser l'algorithme de deep
+                            learning pour du dessin pure mais plutôt pour effectuer
+                            un contrôle entre les objets détectés et ceux dessinés
+                            en prodution.
                     </p>
+                    </div>
                 </div>
+                <div className="exp-titleStories2">
+                    Ingénieur logiciel dessin 3D, Géomédia
+                </div>
+                <div className="exp-stories">
+                        <div className="exp-text" >
+                            J'ai intégré l'entreprise Géomédia en février 2021, en tant qu'ingénieur logiciel 3D,
+                        en remote à temps plein. La solution que propose Géomédia s'appelle <strong>Covadis</strong>, il s'agit d'un
+                        logiciel d'aide au dessin dans le domaine dans la construction. Plus largement, ce logiciel
+                        s'inscrit dans les solutions du groupe <strong>Sogelink</strong> qui a racheté l'entreprise courant 2021.
+                        Le gros de mon travail consiste à développer un module géotechnique dans le logiciel afin de modéliser
+                        des couches géologiques sur des modèles numériques de terrain (MNT). Concrètement, une fois la modélisation du terrain réalisée,
+                        les ingénieurs géotechniciens saisissent dans leur dessin des points de sondage qu'ils ont relevé sur le
+                        terrain en renseignant la nature des couches géologiques qui ont été rencontrées. Mon module calcule ensuite les couches 
+                        (<strong>calcul parallélisé</strong>, utilisation de std::thread) et permet de les visualiser en 2D (vue en coupe) et 3D (vue en orbite) 
+                        la modélisation des couches géologiques. J'ai ensuite adapté les autres modules "métier du logiciel"
+                        pour qu'ils prennent en compte cette notion géologique dans leurs calculs.
+                        </div>
+                </div>
+                <figure className="exp-img-logiciel">
+                <img
+                    className="exp-img-logiciel"
+                    src={geoCouche}
+                    alt="Orbite3D"
+                    ></img>
+                <figcaption className="exp-caption">
+                    Orbite 3D d'un MNT avec modéolisation de couches géologiques
+                </figcaption>
+            </figure>
+            <figure className="exp-img-logiciel">
+                <img
+                    className="exp-img-logiciel"
+                    src={geoCoupe}
+                    alt="Coupe"
+                    ></img>
+                <figcaption className="exp-caption">
+                    Visualisation en vue de coupe des couches géologiques
+                </figcaption>
+            </figure>
             </div>
         </div>
     )
