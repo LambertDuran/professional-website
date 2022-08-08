@@ -9,19 +9,18 @@ import Hobbies from './components/pages/Hobbies'
 
 function App() {
     return (
-        // <>
-        //     <Router>
-        //         <Navbar />
-        //         <Routes>
-        //             <Route exact path="/" element={<Accueil/>} />
-        //             <Route path="/cv" element={<Cv/>} />
-        //             <Route path="/experiences" element={<Experiences/>} />
-        //             <Route path="/hobbies" element={<Hobbies/>} />
-        //             <Route path="*" element={<Accueil/>} />
-        //         </Routes>
-        //     </Router>
-        // </>
-        <div>Test</div>
+        <>
+            <Router>
+                <Navbar />
+                <Routes>
+                    <Route exact path="/" element={<Accueil />} />
+                    <Route path="/cv" element={<Cv />} />
+                    <Route path="/experiences" element={<Experiences />} />
+                    <Route path="/hobbies" element={<Hobbies />} />
+                    <Route path="*" element={<Accueil />} />
+                </Routes>
+            </Router>
+        </>
     )
 }
 
