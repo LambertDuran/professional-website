@@ -11,7 +11,7 @@ p{
     padding: 1em;
 }
 
-h1{
+.left h1, .right h1{
    font-weight: lighter;
    padding: 1em;
    z-index: 1;
