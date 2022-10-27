@@ -34,10 +34,8 @@ function displayDates() {
 
   return (
     <>
-      {point}
-      {arrow}
       <p className="date">Septembre 2017</p>
-      {displayPrimitves(point, 8)}
+      {displayPrimitves(point, 10)}
       <p className="date">Janvier 2018</p>
       {arrow}
       <p className="date">Février 2018</p>
@@ -118,11 +116,11 @@ function Experiences() {
             </a>
           </p>
         </section>
+        <h1>
+          Volontariat Internationnal en Entreprise (VIE) à Antananarivo,
+          Madagascar
+        </h1>
         <section>
-          <h1>
-            Volontariat Internationnal en Entreprise (VIE) à Antananarivo,
-            Madagascar
-          </h1>
           <p>
             À la suite de ce stage, j'avais un besoin toujours plus grandissant
             de découvertes et j'étais définitivement mordu de développement.
