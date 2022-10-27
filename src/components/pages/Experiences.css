@@ -13,7 +13,9 @@ p{
 
 h1{
    font-weight: lighter;
-   padding: 1em 
+   padding: 1em;
+   z-index: 1;
+   background-color: white;
 }
 
 .right section{
@@ -55,18 +57,20 @@ h1{
     margin: 1em;
 }
 
-.timeline, .date{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.arrow{
+    margin-left: 45%;
 }
 
 .timeline{
+    height: 100%;
+    display: flex;
+    margin-left: 45%;
+    margin-bottom: 3em;
+    width: 20px;
+    background-image: url("../../images/point.png");
+    background-repeat: repeat-y;
+    background-size: 100%;
     padding: 1.5em;
-}
-
-.date{
-    font-size: 2em;
 }
 
 .caption{
