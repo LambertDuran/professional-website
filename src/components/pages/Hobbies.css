@@ -9,7 +9,6 @@
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    /* background-color: red; */
 }
 
 .hobbies-text {
@@ -63,54 +62,26 @@
     align-items: center;
 }
 
-.moto-img1,
-.moto-img2,
-.moto-img3,
-.moto-img4,
-.moto-img5,
-.moto-img6 {
-    margin-left: 10px;
-    margin-top: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-.moto-img1 {
-    width: 410px;
-    height: 400px;
-}
-
-.moto-img2 {
-    width: 350px;
-    height: 400px;
-}
-
-.moto-img4 {
-    width: 500px;
-    height: 400px;
-}
-
-.moto-img5 {
-    width: 500px;
-    height: 400px;
-}
-
-.moto-img6 {
-    width: 470px;
-    height: 400px;
-}
-
-.moto-img3 {
-    width: 290px;
-    height: 400px;
-}
-
-.moto-img-mobile-screen {
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    margin-top: 25px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.imgMoto, .imgBig {
+    padding: 1%;
+    height: 370px;
     object-fit: cover;
+}
+
+.imgBig{
+    height: 280px;
+}
+
+.imgContainer{
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    width: calc(100% - 300px);
+}
+
+@media screen and (max-width: 960px) {
+    .imgContainer{
+        float: none;
+        width: 100%;
+    }
 }
