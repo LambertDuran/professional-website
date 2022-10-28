@@ -7,5 +7,5 @@ by achieving this website ..
 
 ## Overview
 
-![image info](./src/images/website_overview.PNG)
+![image info](./src/images/website_overview.png)
 
