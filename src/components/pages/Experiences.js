@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../App.css";
 import "../pages/Experiences.css";
 
@@ -13,64 +13,40 @@ import geoCoupe from "../../images/geocoupe.webp";
 
 import pfe_rapport from "../../pdf/Rapport_PFE.pdf";
 
-function displayDates() {
-  const point = (
-    <div className="timeline">
-      <i className="fas fa-circle"></i>
-    </div>
-  );
-
-  const arrow = (
-    <div className="timeline">
-      <i className="fas fa-long-arrow-alt-down fa-6x"></i>
-    </div>
-  );
-
-  function displayPrimitves(point, nbPoints) {
-    let points = [];
-    for (let i = 0; i < nbPoints; i++) points.push(point);
-    return <>{points} </>;
-  }
-
+function ExperienceHeader(props) {
   return (
-    <>
-      <p className="date">Septembre 2017</p>
-      {/* {displayPrimitves(point, 10)} */}
-      <p className="date">Janvier 2018</p>
-      {/* {arrow} */}
-      <p className="date">Février 2018</p>
-      {/* {displayPrimitves(point, 2)} */}
-      <p className="date">Juillet 2018</p>
-      {/* {arrow} */}
-      <p className="date">Octobre 2018</p>
-      {/* {displayPrimitves(point, 31)} */}
-      <p className="date">Janvier 2021</p>
-      {/* {arrow}
-      {displayPrimitves(point, 30)} */}
-      <p className="date">Maintenant</p>
-    </>
+    <div className="columns">
+      <div className="left">
+        <h1>{props.date}</h1>
+        <div></div>
+      </div>
+      <div className="right">
+        <h1>{props.title}</h1>
+      </div>
+    </div>
+  );
+}
+
+function TimeLine() {
+  return (
+    <div className="left">
+      <div className="arrow">
+        <i className="fas fa-long-arrow-alt-down fa-6x"></i>
+      </div>
+      <div className="timeline"></div>
+    </div>
   );
 }
 
 function Experiences() {
   return (
     <>
+      <ExperienceHeader
+        date="Septembre 2017"
+        title="Semestre Erasmus à Riga, Lettonie"
+      />
       <div className="columns">
-        <div className="left">
-          <h1>Septembre 2017</h1>
-          <div></div>
-        </div>
-        <div className="right">
-          <h1>Semestre Erasmus à Riga, Lettonie</h1>
-        </div>
-      </div>
-      <div className="columns">
-        <div className="left">
-          <div className="arrow">
-            <i className="fas fa-long-arrow-alt-down fa-6x"></i>
-          </div>
-          <div className="timeline"></div>
-        </div>
+        <TimeLine />
         <div className="right">
           <section>
             <img className="map" src={riga} alt="Localistation Riga"></img>
@@ -112,24 +88,12 @@ function Experiences() {
           </section>
         </div>
       </div>
+      <ExperienceHeader
+        date="Janvier 2018"
+        title="Développement d'un algorithme de recalage élastique d'images"
+      />
       <div className="columns">
-        <div className="left">
-          <h1>Janvier 2018</h1>
-          <div></div>
-        </div>
-        <div className="right">
-          <h1>
-            "Développement d'un algorithme de recalage élastique d'images"
-          </h1>
-        </div>
-      </div>
-      <div className="columns">
-        <div className="left">
-          <div className="arrow">
-            <i className="fas fa-long-arrow-alt-down fa-6x"></i>
-          </div>
-          <div className="timeline"></div>
-        </div>
+        <TimeLine />
         <div className="right">
           <section>
             <p>
@@ -146,7 +110,7 @@ function Experiences() {
               également manipulé des outils comme CMake , Trello et Jira .
               Enfin, j'ai mobilisé toutes mes capacités d'abstraction afin
               d'étudier la littérature existante et de l'adapter pour développer
-              notre propre algorithme de recalage{" "}
+              notre propre algorithme de recalage
               <a href={pfe_rapport} download="Recalage_Elastique.pdf">
                 dont je parle plus en détail ici.
               </a>
@@ -154,25 +118,13 @@ function Experiences() {
           </section>
         </div>
       </div>
+      <ExperienceHeader
+        date="Février 2018"
+        title="Volontariat Internationnal en Entreprise (VIE) à Antananarivo,
+            Madagascar"
+      />
       <div className="columns">
-        <div className="left">
-          <h1>Février 2018</h1>
-          <div></div>
-        </div>
-        <div className="right">
-          <h1>
-            Volontariat Internationnal en Entreprise (VIE) à Antananarivo,
-            Madagascar
-          </h1>
-        </div>
-      </div>
-      <div className="columns">
-        <div className="left">
-          <div className="arrow">
-            <i className="fas fa-long-arrow-alt-down fa-6x"></i>
-          </div>
-          <div className="timeline"></div>
-        </div>
+        <TimeLine />
         <div className="right">
           <section>
             <p>
@@ -225,7 +177,7 @@ function Experiences() {
             <img className="pic_pcl" src={pcl} alt="Logo de pcl"></img>
             <p>
               Le but de mon contrat était de développer des outils qui
-              permettent de travailler avec des nuages de points dans{" "}
+              permettent de travailler avec des nuages de points dans
               <strong>GStarCAD, clone chinois d'AutoCAD</strong> dont la license
               coûte moins cher. Mais de paire avec le prix inférieur, les
               fonctionnalités du logiciel sont également inférieures, notamment
@@ -249,8 +201,8 @@ function Experiences() {
             </p>
             <p>
               {"\u2022 "} Six mois plus tard, les tests d'intégration de l'objet
-              nuage étant concluants, j'ai{" "}
-              <strong>recruté trois développeurs et un alternant</strong>{" "}
+              nuage étant concluants, j'ai
+              <strong>recruté trois développeurs et un alternant</strong>
               malgache. Le but de cette équipe était notamment d'accompagner la
               croissance et le développement de l'entreprise en mettant en place
               de nouvelles méthodes techniques de dessin et de contrôle qualité.
@@ -272,7 +224,7 @@ function Experiences() {
               pour qu'il y ait une trace des fonctionnements de chaque commande.
             </p>
             <p>
-              En paralèle de l'équipe de développeurs C++,{" "}
+              En paralèle de l'équipe de développeurs C++,
               <strong> j'encadrais un développeur Python</strong> qui avait
               développé avec TensorFlow un algorithme de reconnaissance
               d'images. Lorsque certaines équipes de production étaient en
@@ -288,22 +240,12 @@ function Experiences() {
           </section>
         </div>
       </div>
+      <ExperienceHeader
+        date="Juillet 2018"
+        title="Ingénieur logiciel dessin 3D, Sogélink"
+      />
       <div className="columns">
-        <div className="left">
-          <h1>Juillet 2018</h1>
-          <div></div>
-        </div>
-        <div className="right">
-          <h1>Ingénieur logiciel dessin 3D, Sogélink</h1>
-        </div>
-      </div>
-      <div className="columns">
-        <div className="left">
-          <div className="arrow">
-            <i className="fas fa-long-arrow-alt-down fa-6x"></i>
-          </div>
-          <div className="timeline"></div>
-        </div>
+        <TimeLine />
         <div className="right">
           <section>
             <p>
