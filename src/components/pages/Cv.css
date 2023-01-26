@@ -3,17 +3,11 @@
 }
 
 .pdf-container {
-    display: flex;
-    flex: 1;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    object-fit: cover;
-    /* width: 400px; */
-}
-
-.pdf-viewer {
-    outline: thick double #32a1ce;
+    display: flex;
+    padding: 1em;
+    zoom: 130%;
+    background-image:url("../../images/prof.jpeg") ;
 }
 
 .download-button {
@@ -23,8 +17,4 @@
     cursor: pointer;
     background: transparent;
     border-style: none;
-}
-
-.hidden {
-    display: none;
 }
