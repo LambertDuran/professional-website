@@ -7,14 +7,27 @@ import "./Cv.css";
 const Cv = () => {
   const [pageNumber] = useState(1);
   const [error, setError] = useState(null);
+  const downloadStyle = {
+    color: "#FFB200",
+    position: "absolute",
+    top: "-10px",
+    left: "-10px",
+  };
 
   return (
-    <div className="pdf-container">
-      <Document file={pdfFile} onLoadError={(error) => setError(error)}>
-        <Page pageNumber={pageNumber} />
-      </Document>
-      {error && <p>Failed to load PDF file : {error}</p>}
-    </div>
+    <>
+      <button className="download-button">
+        <a href={pdfFile} download>
+          <i class="fas fa-cloud-download-alt fa-4x" style={downloadStyle}></i>
+        </a>
+      </button>
+      <div className="pdf-container">
+        <Document file={pdfFile} onLoadError={(error) => setError(error)}>
+          <Page pageNumber={pageNumber} />
+        </Document>
+        {error && <p>Failed to load PDF file : {error}</p>}
+      </div>
+    </>
   );
 };
 
