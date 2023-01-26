@@ -5,7 +5,7 @@ import { Document, Page } from "react-pdf/dist/esm/entry.webpack5";
 import "./Cv.css";
 
 const Cv = () => {
-  const [pageNumber, setPageNumber] = useState(1);
+  const [pageNumber] = useState(1);
   const [error, setError] = useState(null);
 
   return (
