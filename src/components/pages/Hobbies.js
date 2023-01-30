@@ -21,31 +21,35 @@ export default function Hobbies() {
       <div className="hobbies-title-container">
         <h1 className="hobbies-title"> Lectures </h1>
       </div>
-      <div className="hobbies-text">
-        {"\u2022"} Très intéressé par l'actualité économique, sociale et
-        géopolitique, je suis abonné au monde diplomatique.
-      </div>
-      <div className="hobbies-text">
-        {"\u2022"} Passionné de romans d'aventure, mes auteurs favorits ont vécu
-        le siècle dernier. J'ai toujours à mes côtés au moins un livre de Joseph
-        Kessel, Nicolas Bouvier ou Henry de Montfreid.
-      </div>
-      <div className="hobbies-img-container">
-        <img
-          className="hobbies-img"
-          src={lusageDuMonde}
-          alt="L'Usage du Monde, Nicolas Bouvier"
-        ></img>
-        <img
-          className="hobbies-img"
-          src={lesSecretsDeLaMerRouge}
-          alt="Les Secrets de la Mer Rouge, Henry de Montfreid"
-        ></img>
-        <img
-          className="hobbies-img"
-          src={lesCavaliers}
-          alt="Les cavaliers, Joseph Kessel"
-        ></img>
+      <div className="moto_container">
+        <ul>
+          <li className="moto_li">
+            Très intéressé par l'actualité économique, sociale et géopolitique,
+            je suis abonné au monde diplomatique.
+          </li>
+          <li className="moto_li">
+            Passionné de romans d'aventure, mes auteurs favorits ont vécu le
+            siècle dernier. J'ai toujours à mes côtés au moins un livre de
+            Joseph Kessel, Nicolas Bouvier ou Henry de Montfreid.
+          </li>
+        </ul>
+        <div className="hobbies-img-container">
+          <img
+            className="hobbies-img"
+            src={lusageDuMonde}
+            alt="L'Usage du Monde, Nicolas Bouvier"
+          ></img>
+          <img
+            className="hobbies-img"
+            src={lesSecretsDeLaMerRouge}
+            alt="Les Secrets de la Mer Rouge, Henry de Montfreid"
+          ></img>
+          <img
+            className="hobbies-img"
+            src={lesCavaliers}
+            alt="Les cavaliers, Joseph Kessel"
+          ></img>
+        </div>
       </div>
       <div className="hobbies-title-container">
         <h1 className="hobbies-title"> Podcasts</h1>
@@ -107,23 +111,21 @@ export default function Hobbies() {
         <h1 className="hobbies-title"> Moto </h1>
       </div>
       <div className="moto_container">
-        <p>
-          <ul>
-            <li className="moto_li">
-              J'ai acheté ma première moto à Madagascar, un peu par hasard.
-              Antananarivo étant une ville atrocement embouteillée, il était
-              nécessaire d'avoir un deux roues pour se déplacer. Donc c'est
-              plutôt par besoin que par passion que j'ai commencé à rouler.
-            </li>
-            <li className="moto_li">
-              La suite est classique, je partais en week-end en moto avec des
-              copains motards et la passion a été vite suscitée. Finalement en
-              2020, à la fin de mon contrat à Madagascar, je partais voyager
-              tout seul avec ma bécane, pour faire le tour de l'île pendant les
-              deux prochains mois.
-            </li>
-          </ul>
-        </p>
+        <ul>
+          <li className="moto_li">
+            J'ai acheté ma première moto à Madagascar, un peu par hasard.
+            Antananarivo étant une ville atrocement embouteillée, il était
+            nécessaire d'avoir un deux roues pour se déplacer. Donc c'est plutôt
+            par besoin que par passion que j'ai commencé à rouler.
+          </li>
+          <li className="moto_li">
+            La suite est classique, je partais en week-end en moto avec des
+            copains motards et la passion a été vite suscitée. Finalement en
+            2020, à la fin de mon contrat à Madagascar, je partais voyager tout
+            seul avec ma bécane, pour faire le tour de l'île pendant les deux
+            prochains mois.
+          </li>
+        </ul>
         <div className="carousel_container">
           <Carousel
             infiniteLoop={true}
