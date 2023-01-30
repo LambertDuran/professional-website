@@ -13,6 +13,10 @@ import geoCoupe from "../../images/geocoupe.webp";
 
 import pfe_rapport from "../../pdf/Rapport_PFE.pdf";
 
+import def_indicator from "../../images/top5_definition_indicateur.webp";
+import data_fill from "../../images/top5_saisie_donnees.webp";
+import data_visualize from "../../images/visualisation_des_donnees.webp";
+
 function ExperienceHeader(props) {
   return (
     <div className="columns">
@@ -89,7 +93,7 @@ function Experiences() {
         </div>
       </div>
       <ExperienceHeader
-        date="Janvier 2018"
+        date="Février 2018"
         title="Développement d'un algorithme de recalage élastique d'images"
       />
       <div className="columns">
@@ -119,7 +123,7 @@ function Experiences() {
         </div>
       </div>
       <ExperienceHeader
-        date="Février 2018"
+        date="Octobre 2018"
         title="Volontariat Internationnal en Entreprise (VIE) à Antananarivo,
             Madagascar"
       />
@@ -241,7 +245,7 @@ function Experiences() {
         </div>
       </div>
       <ExperienceHeader
-        date="Juillet 2018"
+        date="Février 2020"
         title="Ingénieur logiciel dessin 3D, Sogélink"
       />
       <div className="columns">
@@ -283,6 +287,95 @@ function Experiences() {
               <img className="pic_sogelink" src={geoCoupe} alt="Coupe"></img>
               <figcaption className="caption">
                 Visualisation en vue de coupe des couches géologiques
+              </figcaption>
+            </figure>
+          </section>
+        </div>
+      </div>
+      <ExperienceHeader
+        date="Septembre 2022"
+        title="Freelance applications web React / NodeJS"
+      />
+      <div className="columns">
+        <TimeLine />
+        <div className="right">
+          <section>
+            <p>
+              Au bout de quatre - cinq années de travail dans le logiciel en
+              entreprise, j'ai ressenti le besoin d'explorer de nouvelles
+              méthodes de travail, et de tester de nouvelles techno, plus
+              modernes et plus tournées vers les web-applications. J'avais
+              besoin aussi de voir plus grand, et de travailler sur un projet
+              dans son "ensemble" et plus uniquement sur quelques briques. J'ai
+              donc décidé de me former en temps qu'ingé full-stack sur les
+              technologies React et NodeJS. J'ai commencé par suivre les
+              formations de Mosh Hamedani, des formations très complètes mises
+              en pratique sur une application concrète.
+            </p>
+            <p>
+              En parallèle, j'ai commencé à travailler avec un client contacté
+              via la plateforme Malt. J'ai ainsi rejoint une équipe de quatre /
+              cinq développeurs et le projet était de développer une application
+              de gestion de projets, de tâches et de ressources pour le monde
+              industriel. J'ai directement mis en pratique les connaissances
+              acquises sur les technologies React et NodeJS et le combo cours /
+              projet m'a permis de progresser très rapidement.
+            </p>
+            <p>
+              Par exemple, une des features sur lesquelles j'ai travaillé est le
+              suivi d'indicateurs, afin de pouvoir étudier l'avancement d'un
+              projet, comme le nombre d'objets créés, le nombre d'accidents de
+              travail, etc ...
+            </p>
+            <figure>
+              <img
+                src={def_indicator}
+                alt="définition d'indicateur"
+                className="dopm"
+                caption="Définition d'un indicateur"
+              ></img>
+              <figcaption className="caption">
+                1. Création d'un indicateur
+              </figcaption>
+            </figure>
+            <p>
+              Un indicateur peut comporter plusieurs courbes, par exemple dans
+              une usine de création de mobiliers, une courbe pour représenter le
+              nombre de fauteuils produits par jour, et une courbe pour le
+              nombre de chaises. En plus de ces données, l'utilisateur a la
+              possibilité de renseigner les objectifs, il s'agit dans l'exemple
+              précédent du nombre de chaises ou de fauteuils à produire.
+            </p>
+            <p>
+              Ensuite, les équipes viennent saisir au jour le jour dans
+              l'application, les valeurs observées réellement.
+            </p>
+            <figure>
+              <img
+                src={data_fill}
+                alt="Saisie des données"
+                className="dopm"
+                caption="Saisie des données"
+              ></img>
+              <figcaption className="caption">2. Saisie des données</figcaption>
+            </figure>
+            <p>
+              Enfin la dernière étape est la visualisation des données. Pour
+              cela j'ai utilisé la librairie de visualisation de données
+              ChartJS. L'indicateur présenté est hebdomadaire, c'-à-d que les
+              données sont saisies chaque semaine. En fonction de si la valeur
+              cible a été atteinte les histogrammes ont une couleur verte ou
+              rouge.
+            </p>
+            <figure>
+              <img
+                src={data_visualize}
+                alt="Visualisation des données"
+                className="dopm"
+                caption="Visualisation des données"
+              ></img>
+              <figcaption className="caption">
+                3. Visualisation des données
               </figcaption>
             </figure>
           </section>

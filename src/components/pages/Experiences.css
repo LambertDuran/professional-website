@@ -76,6 +76,11 @@ p{
     text-align: center;
 }
 
+.dopm{
+    padding: 2em;
+    width: 100%;
+}
+
 @media screen and (max-width: 960px) {
     .columns{
         grid-template-columns: 100%;
