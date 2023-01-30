@@ -10,13 +10,16 @@ import moto3 from "../../images/moto3.webp";
 import moto4 from "../../images/moto4.webp";
 import moto5 from "../../images/moto5.webp";
 import moto6 from "../../images/moto6.webp";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+
+const mada_img = [moto1, moto2, moto3, moto4, moto5, moto6];
 
 export default function Hobbies() {
   return (
     <>
       <div className="hobbies-title-container">
         <h1 className="hobbies-title"> Lectures </h1>
-        <h1 className="hobbies-title"> </h1>
       </div>
       <div className="hobbies-text">
         {"\u2022"} Très intéressé par l'actualité économique, sociale et
@@ -46,7 +49,6 @@ export default function Hobbies() {
       </div>
       <div className="hobbies-title-container">
         <h1 className="hobbies-title"> Podcasts</h1>
-        <h1 className="hobbies-title"> </h1>
       </div>
       <div className="hobbies-text">
         {"\u2022 "}
@@ -102,29 +104,46 @@ export default function Hobbies() {
         Une série 'Les others', des histoires et des aventures en pleine nature.
       </div>
       <div className="hobbies-title-container">
-        <h1 className="hobbies-title"> Sports </h1>
+        <h1 className="hobbies-title"> Moto </h1>
       </div>
-      <div>
-        <div className="imgContainer">
-          <img className="imgMoto" src={moto1} alt="Madagascar"></img>
-          <img className="imgMoto" src={moto3} alt="Madagascar"></img>
-          <img className="imgBig" src={moto6} alt="Madagascar"></img>
-          <img className="imgMoto" src={moto2} alt="Madagascar"></img>
-          <img className="imgMoto" src={moto4} alt="Madagascar"></img>
-          <img className="imgMoto" src={moto5} alt="Madagascar"></img>
+      <div className="moto_container">
+        <p>
+          <ul>
+            <li className="moto_li">
+              J'ai acheté ma première moto à Madagascar, un peu par hasard.
+              Antananarivo étant une ville atrocement embouteillée, il était
+              nécessaire d'avoir un deux roues pour se déplacer. Donc c'est
+              plutôt par besoin que par passion que j'ai commencé à rouler.
+            </li>
+            <li className="moto_li">
+              La suite est classique, je partais en week-end en moto avec des
+              copains motards et la passion a été vite suscitée. Finalement en
+              2020, à la fin de mon contrat à Madagascar, je partais voyager
+              tout seul avec ma bécane, pour faire le tour de l'île pendant les
+              deux prochains mois.
+            </li>
+          </ul>
+        </p>
+        <div className="carousel_container">
+          <Carousel
+            infiniteLoop={true}
+            dynamicHeight={true}
+            autoPlay={true}
+            swipeable={true}
+            showArrows={false}
+            interval={5000}
+          >
+            {mada_img.map((img) => {
+              return (
+                <img
+                  src={img}
+                  alt="Moto à Madagascar"
+                  className="moto_img"
+                ></img>
+              );
+            })}
+          </Carousel>
         </div>
-        <p>{"\u2022 "} Tennis de table en club</p>
-        <p>
-          {"\u2022 "} Randonnée: Différentes étapes du GR5 (Les Vosges), du GR10
-          (Pyrénées), du GR34 (Bretagne), et le GR20 (Corse) en totalité !
-        </p>
-        <p>{"\u2022 "} Surf</p>
-        <p>
-          {"\u2022 "} Moto : Permis A2. <br></br>J'adore les voyages en moto et
-          bivouac sauvage. Une de mes plus grandes aventures a été le tour de
-          Madagascar (environ 5000 km et un mois et demi) en moto et en
-          solitaire !
-        </p>
       </div>
     </>
   );
