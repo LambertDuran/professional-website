@@ -10,10 +10,17 @@ import moto3 from "../../images/moto3.webp";
 import moto4 from "../../images/moto4.webp";
 import moto5 from "../../images/moto5.webp";
 import moto6 from "../../images/moto6.webp";
+import rando1 from "../../images/rando1.webp";
+import rando2 from "../../images/rando2.webp";
+import rando3 from "../../images/rando3.webp";
+import rando4 from "../../images/rando4.webp";
+import rando5 from "../../images/rando5.webp";
+
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 const mada_img = [moto1, moto2, moto3, moto4, moto5, moto6];
+const rando_img = [rando1, rando2, rando3, rando4, rando5];
 
 export default function Hobbies() {
   return (
@@ -62,7 +69,7 @@ export default function Hobbies() {
           target="_blank"
         >
           Les pieds sur Terre :
-        </a>
+        </a>{" "}
         Emission sociologique de France Culture où les locuteurs détaillent un
         fait marquant de leur vie. "Mon histoire d'amour durant le confinement",
         ou bien "Le jour où j'ai assisté à un viol" en passant par "Comment j'ai
@@ -76,7 +83,7 @@ export default function Hobbies() {
           rel="noreferrer"
         >
           Rendez-vous avec X :
-        </a>
+        </a>{" "}
         Entretien par Patrick Pesnot de 'Monsieur X', ancien agent de la DGSE.
         Monsieur X revient sur des histoires d'espionnage et des affaires
         secrètes dans lesquelles se jouent l'histoire de nos démocraties !
@@ -89,7 +96,7 @@ export default function Hobbies() {
           rel="noreferrer"
         >
           Thinkerview :
-        </a>
+        </a>{" "}
         Chaîne YouTube recevant des journalistes, des diplomates, des lanceurs
         d'aleter etc .. Ils sont invités à s'exprimer sur des sujets
         d'actualité. Dans une société où le temps est compté, ce format
@@ -104,7 +111,7 @@ export default function Hobbies() {
           rel="noreferrer"
         >
           Les Baladeurs :
-        </a>
+        </a>{" "}
         Une série 'Les others', des histoires et des aventures en pleine nature.
       </div>
       <div className="hobbies-title-container">
@@ -145,6 +152,37 @@ export default function Hobbies() {
               );
             })}
           </Carousel>
+        </div>
+      </div>
+      <div className="hobbies-title-container">
+        <h1 className="hobbies-title"> Randonnée </h1>
+      </div>
+      <div className="rando_container">
+        <div className="carousel_container">
+          <Carousel
+            infiniteLoop={true}
+            dynamicHeight={true}
+            autoPlay={true}
+            swipeable={true}
+            showArrows={false}
+            interval={5000}
+          >
+            {rando_img.map((img) => {
+              return (
+                <img
+                  src={img}
+                  alt="Moto à Madagascar"
+                  className="moto_img"
+                ></img>
+              );
+            })}
+          </Carousel>
+        </div>
+        <div className="rando_text">
+          Passionné de voyages en nature, la France est un remarquable terrain
+          de jeu ! Durant mes escapades, j'ai eu l'occasion de faire quelques
+          étapes du GR5 (Les Vosges), du GR34 (La Bretagne), du GR10 (Les
+          Pyrénées) et du GR20 (La Corse).
         </div>
       </div>
     </>
