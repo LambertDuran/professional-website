@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/professional-website/static/css/main.d4f8c961.css",
-    "main.js": "/professional-website/static/js/main.66bd981f.js",
+    "main.js": "/professional-website/static/js/main.ae194cbf.js",
     "static/media/geocouche.webp": "/professional-website/static/media/geocouche.3bec4ca87d2097458a81.webp",
     "static/media/couches_geo.gif": "/professional-website/static/media/couches_geo.37fd5f851013f0cc82ae.gif",
     "static/media/geocoupe.webp": "/professional-website/static/media/geocoupe.e1448b28995edae1c754.webp",
     "static/media/Rapport_PFE.pdf": "/professional-website/static/media/Rapport_PFE.a91b1c5ede6bd8f1c42e.pdf",
     "static/media/pdf.worker.js": "/professional-website/static/media/pdf.worker.5a4781656f64092ca08b.js",
     "static/media/lidar.webp": "/professional-website/static/media/lidar.c9fef6984245cd05bd5a.webp",
+    "static/media/indicateur_hebdo.gif": "/professional-website/static/media/indicateur_hebdo.f65b4fdbd75b7a19c48e.gif",
     "static/media/pointcloud.webp": "/professional-website/static/media/pointcloud.05c10b004d8943256e6f.webp",
     "static/media/CV_Lambert_Duran.pdf": "/professional-website/static/media/CV_Lambert_Duran.9aaaa0692c859af4a880.pdf",
     "static/media/importShape.webp": "/professional-website/static/media/importShape.8e7fea82c0f3505871aa.webp",
@@ -27,7 +28,6 @@
     "static/media/madagascar.webp": "/professional-website/static/media/madagascar.b66d21bf3112086a56fe.webp",
     "static/media/moto1.webp": "/professional-website/static/media/moto1.54c71a71fd461bb6bf31.webp",
     "static/media/moto4.webp": "/professional-website/static/media/moto4.9b2f35706c8d815e703d.webp",
-    "static/media/visualisation_des_donnees.webp": "/professional-website/static/media/visualisation_des_donnees.1a56d9a8ef48612cdf85.webp",
     "static/media/lesCavaliers.webp": "/professional-website/static/media/lesCavaliers.7c2a4420d5edc03f16d0.webp",
     "static/media/top5_definition_indicateur.webp": "/professional-website/static/media/top5_definition_indicateur.db8055bd7d4bd161462d.webp",
     "static/media/wallpaper.webp": "/professional-website/static/media/wallpaper.fdeedfd24c4735f70171.webp",
@@ -37,10 +37,10 @@
     "static/media/cerveau.webp": "/professional-website/static/media/cerveau.2b03d5027ba5b52f25d8.webp",
     "index.html": "/professional-website/index.html",
     "main.d4f8c961.css.map": "/professional-website/static/css/main.d4f8c961.css.map",
-    "main.66bd981f.js.map": "/professional-website/static/js/main.66bd981f.js.map"
+    "main.ae194cbf.js.map": "/professional-website/static/js/main.ae194cbf.js.map"
   },
   "entrypoints": [
     "static/css/main.d4f8c961.css",
-    "static/js/main.66bd981f.js"
+    "static/js/main.ae194cbf.js"
   ]
 }
