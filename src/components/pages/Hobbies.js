@@ -15,6 +15,11 @@ import rando2 from "../../images/rando2.webp";
 import rando3 from "../../images/rando3.webp";
 import rando4 from "../../images/rando4.webp";
 import rando5 from "../../images/rando5.webp";
+import AudioPlayer from "../AudioPlayer";
+import ambiantTechno from "../../sounds/ambiantTechno.mp3";
+import industrialTechno from "../../sounds/industrial_Techno.mp3";
+import mountainSkyline from "../../images/mountainSkyline.jpg";
+import moon from "../../images/moon.jpg";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -137,7 +142,6 @@ export default function Hobbies() {
           <Carousel
             infiniteLoop={true}
             dynamicHeight={true}
-            autoPlay={true}
             swipeable={true}
             showArrows={false}
             interval={5000}
@@ -162,7 +166,6 @@ export default function Hobbies() {
           <Carousel
             infiniteLoop={true}
             dynamicHeight={true}
-            autoPlay={true}
             swipeable={true}
             showArrows={false}
             interval={5000}
@@ -184,6 +187,27 @@ export default function Hobbies() {
           étapes du GR5 (Les Vosges), du GR34 (La Bretagne), du GR10 (Les
           Pyrénées) et du GR20 (La Corse).
         </div>
+      </div>
+      <div className="hobbies-title-container">
+        <h1 className="hobbies-title"> Musique </h1>
+      </div>
+      <div className="music_text">
+        Je suis un grand fan de Techno. Que ce soit dans les transports, en
+        travaillant, ou en faisant la fête, j'écoute du Amélie Lens, Laurent
+        Garnier, Regal et pleins d'autres ! J'ai aussi un petit peu mixé, voici
+        deux sets que j'ai enregistré avec ma MixTrack Pro sur Serrato!
+      </div>
+      <div className="music_container">
+        <AudioPlayer
+          src={ambiantTechno}
+          title="#Ambiant Techno"
+          img={mountainSkyline}
+        />
+        <AudioPlayer
+          src={industrialTechno}
+          title="#Industrial Techno"
+          img={moon}
+        />
       </div>
     </>
   );

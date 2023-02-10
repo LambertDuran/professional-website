@@ -15,7 +15,7 @@ import pfe_rapport from "../../pdf/Rapport_PFE.pdf";
 
 import def_indicator from "../../images/top5_definition_indicateur.webp";
 import data_fill from "../../images/top5_saisie_donnees.webp";
-import data_visualize from "../../images/visualisation_des_donnees.webp";
+import indicateur_hebdo from "../../images/indicateur_hebdo.gif";
 
 function ExperienceHeader(props) {
   return (
@@ -369,7 +369,7 @@ function Experiences() {
             </p>
             <figure>
               <img
-                src={data_visualize}
+                src={indicateur_hebdo}
                 alt="Visualisation des données"
                 className="dopm"
                 caption="Visualisation des données"
