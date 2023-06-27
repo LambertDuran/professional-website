@@ -17,6 +17,12 @@ import def_indicator from "../../images/top5_definition_indicateur.webp";
 import data_fill from "../../images/top5_saisie_donnees.webp";
 import indicateur_hebdo from "../../images/indicateur_hebdo.gif";
 
+import parametrages from "../../images/parametrages.webp";
+import bassins from "../../images/bassins.webp";
+import creationAction from "../../images/creationAction.gif";
+import affichageBassin from "../../images/affichageBassins.gif";
+import ficheJournaliere from "../../images/ficheJournaliere.gif";
+
 function ExperienceHeader(props) {
   return (
     <div className="columns">
@@ -295,7 +301,7 @@ function Experiences() {
       </div>
       <ExperienceHeader
         date="Septembre 2022"
-        title="Freelance applications web React / NodeJS"
+        title="Freelance applications web Typescript / React / NodeJS"
       />
       <div className="columns">
         <TimeLine />
@@ -382,11 +388,103 @@ function Experiences() {
           </section>
         </div>
       </div>
+      <ExperienceHeader
+        date="Avril 2023"
+        title="Freelance sur une application de pisciculture"
+      />
+      <div className="columns">
+        <TimeLine />
+        <div className="right">
+          <section>
+            <p>
+              J'ai ensuite travaillé sur un projet de pisciculture. L'objectif
+              était de pouvoir paramétrer son installation dans l'application:
+              c'est-à-dire le nombre de bassins, les espèces de poissons, et le
+              type d'aliment utilisé.
+            </p>
+            <figure>
+              <img
+                className="pic_sogelink"
+                src={parametrages}
+                alt="Paramétrage du projet"
+              ></img>
+              <figcaption className="caption">
+                1. Affichage de la courbe de croissance d'un poisson avec son
+                aliment.
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                className="pic_sogelink"
+                src={bassins}
+                alt="Paramétrages des bassins"
+              ></img>
+              <figcaption className="caption">
+                2. Paramétrage des bassins
+              </figcaption>
+            </figure>
+            <p>
+              Dans un second temps, le pisciculteur peut définir des actions sur
+              les bassins de son exploitation depuis la page "Journal". Il peut
+              par exemple venir renseigner s'il a fait rentrer un lot de
+              poissons dans un bassin, s'il a réalisé une pesée sur les poissons
+              du bassin, s'il y a eu de la mortalité, s'il a vendu des poissons,
+              s'il les a transférés vers un autre bassin. Une fois qu'il
+              sélectionne un traitement il est invité à saisir la date, l'espèce
+              de poissons et le bassin concerné, et leur quantité.
+            </p>
+            <figure>
+              <img
+                className="pic_sogelink"
+                src={creationAction}
+                alt="Création d'une action"
+              ></img>
+              <figcaption className="caption">
+                3. Exemple de création d'action sur un bassin.
+              </figcaption>
+            </figure>
+            <p>
+              Une fois que le projet est bien paramétré et que des actions ont
+              été créées sur chaque bassin, un algorithme calcule l'évolution de
+              poids moyen des poissons sur le bassin en tenant compte du poids
+              réel mesuré lors des pesées et en l'extrapolant avec la croissance
+              théorique définie en étape 1. Cette évolution est visualisable
+              soit sous forme de grille, soit sous forme de courbe.
+            </p>
+            <figure>
+              <img
+                className="pic_sogelink"
+                src={affichageBassin}
+                alt="Visualisation bassin"
+              ></img>
+              <figcaption className="caption">
+                4. Visualisation de l'évolution d'un bassin.
+              </figcaption>
+            </figure>
+            <p>
+              Enfin, un dernier onglet de l'application calcule automatiquement
+              la quantité d'aliment à distribuer par bassin chaque jour en
+              fonction du nombre de poissons, et de l'aliment qui leur est
+              attribué.
+            </p>
+            <figure>
+              <img
+                className="pic_sogelink"
+                src={ficheJournaliere}
+                alt="Fiche Journaliere"
+              ></img>
+              <figcaption className="caption">
+                5. Fiche journalière de distribution d'aliment.
+              </figcaption>
+            </figure>
+          </section>
+        </div>
+      </div>
       <div className="columns">
         <div className="left">
           <h1>Maintenant</h1>
         </div>
-        <h1 className="rigth">Encore à écrire !</h1>
+        <h1 className="rigth">Cherche un travail de développeur à Perth !</h1>
       </div>
     </>
   );
