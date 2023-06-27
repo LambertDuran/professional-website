@@ -1,6 +1,6 @@
 import pdfFile from "../../pdf/CV_Lambert_Duran.pdf";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack5";
 import "./Cv.css";
 
@@ -13,13 +13,7 @@ const Cv = () => {
     left: "-10px",
   };
 
-  const [windowWidth, setWindowWidth] = useState(0);
-  const [scale, setScale] = useState(1.5);
-
-  useEffect(() => {
-    setWindowWidth(window.innerWidth);
-    setScale(windowWidth / 1000);
-  }, [windowWidth]);
+  const [scale] = useState(window.innerWidth / 800);
 
   return (
     <>

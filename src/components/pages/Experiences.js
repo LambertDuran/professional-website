@@ -6,7 +6,7 @@ import riga from "../../images/riga.webp";
 import riga2 from "../../images/riga2.webp";
 import mada from "../../images/madagascar.webp";
 import lidar from "../../images/lidar.webp";
-import pointCloud from "../../images/pointcloud.webp";
+import pointCloud from "../../images/digit.gif";
 import pcl from "../../images/pcl.webp";
 import geoCouche from "../../images/geocouche.webp";
 import geoCoupe from "../../images/geocoupe.webp";
@@ -85,9 +85,9 @@ function Experiences() {
               des exercices de <strong>Python et C++</strong> sur CodingGame.
               J'ai pris beaucoup de plaisir à cette époque à apprendre à coder
               et j'ai commencé à chercher un stage en algorithmique. Finalement,
-              j'ai trouvé un stage de développement
-              <strong>ThermoFisher Scientific</strong>, entreprise de logiciels
-              dans le secteur de l'imagerie médicale.
+              j'ai trouvé un stage de développement chez
+              <strong> ThermoFisher Scientific</strong>, entreprise américaine
+              de logiciels dans le secteur de l'imagerie médicale.
             </p>
           </section>
         </div>
@@ -114,9 +114,9 @@ function Experiences() {
               également manipulé des outils comme CMake , Trello et Jira .
               Enfin, j'ai mobilisé toutes mes capacités d'abstraction afin
               d'étudier la littérature existante et de l'adapter pour développer
-              notre propre algorithme de recalage
+              notre propre algorithme de recalage{" "}
               <a href={pfe_rapport} download="Recalage_Elastique.pdf">
-                dont je parle plus en détail ici.
+                dont je parle plus en détails ici.
               </a>
             </p>
           </section>
@@ -144,10 +144,10 @@ function Experiences() {
             <img className="map" src={mada} alt="Localistation Mada"></img>
             <p>
               Futurmap est une entreprise de traitements de données
-              géographiques. Les collectivités ont entre autres l'obligation
-              d'avoir une base de données géoréférencées à jour de leur
-              territoire. Pour réaliser ces plans, des voitures surmontées de
-              caméra LIDAR parcourent les zones urbaines et péri-urbaines.
+              géographiques. Les collectivités françaises ont entre autres
+              l'obligation d'avoir une base de données géoréférencées à jour de
+              leur territoire. Pour réaliser ces plans, des voitures surmontées
+              de caméra LIDAR parcourent les zones urbaines et péri-urbaines.
               Concernant les zones rurales le traitement est généralement
               effectué avec du Lidar aérien. La caméra émet un laser qui est
               réfléchi par les objets autour du véhicule. Le rayon réfléchi est
@@ -174,7 +174,7 @@ function Experiences() {
                   alt="Chargement dans le logiciel"
                 ></img>
                 <figcaption className="caption">
-                  Affichage d'un nuage de points dans GStarCad.
+                  Digitalisation de nuage de points dans GStarCad.
                 </figcaption>
               </figure>
             </div>
@@ -182,13 +182,14 @@ function Experiences() {
             <p>
               Le but de mon contrat était de développer des outils qui
               permettent de travailler avec des nuages de points dans
-              <strong>GStarCAD, clone chinois d'AutoCAD</strong> dont la license
-              coûte moins cher. Mais de paire avec le prix inférieur, les
-              fonctionnalités du logiciel sont également inférieures, notamment
-              concernant les nuages de points. Ma mission dans l'entreprise a
-              été d'oeuvrer au développement de GStarCAD en vue de son adoption
-              totale en production (on parle de plus de 250 dessinateurs). Cette
-              mission de VIE s'est découpée en trois parties:
+              <strong> GStarCAD, clone chinois d'AutoCAD</strong> dont la
+              license coûte moins cher. Mais de paire avec le prix inférieur,
+              les fonctionnalités du logiciel sont également inférieures,
+              notamment concernant les nuages de points. Ma mission dans
+              l'entreprise a été d'oeuvrer au développement de GStarCAD en vue
+              de son adoption totale en production (on parle de plus de 250
+              dessinateurs). Cette mission de VIE s'est découpée en trois
+              parties:
             </p>
             <p>
               {"\u2022 "} Compiler la librairie C++ Open Source de nuages de
@@ -206,10 +207,10 @@ function Experiences() {
             <p>
               {"\u2022 "} Six mois plus tard, les tests d'intégration de l'objet
               nuage étant concluants, j'ai
-              <strong>recruté trois développeurs et un alternant</strong>
+              <strong> recruté trois développeurs et un alternant </strong>
               malgache. Le but de cette équipe était notamment d'accompagner la
               croissance et le développement de l'entreprise en mettant en place
-              de nouvelles méthodes techniques de dessin et de contrôle qualité.
+              de nouvelles méthodes de dessin et de contrôle qualité.
             </p>
             <p>
               {"\u2022 "} La seconde année de mon VIE j'avais à la fois une
@@ -237,7 +238,7 @@ function Experiences() {
               tracer des "Bounding Box" sur des objets ponctuels tels que les
               bouches à clefs, les regards, les bornes à incendie etc...
               Cependant la précision exigée par les clients ne nous permettaient
-              pas d'utiliser l'algorithme de deep learning pour du dessin pure
+              pas d'utiliser l'algorithme de deep learning pour du dessin pur,
               mais plutôt pour effectuer un contrôle entre les objets détectés
               et ceux dessinés en prodution.
             </p>
@@ -314,9 +315,9 @@ function Experiences() {
             </p>
             <p>
               En parallèle, j'ai commencé à travailler avec un client contacté
-              via la plateforme Malt. J'ai ainsi rejoint une équipe de quatre /
-              cinq développeurs et le projet était de développer une application
-              de gestion de projets, de tâches et de ressources pour le monde
+              via la plateforme Malt. J'ai ainsi rejoint une équipe de quatre
+              développeurs et le projet était de développer une application de
+              gestion de projets, de tâches et de ressources pour le monde
               industriel. J'ai directement mis en pratique les connaissances
               acquises sur les technologies React et NodeJS et le combo cours /
               projet m'a permis de progresser très rapidement.

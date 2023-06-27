@@ -144,7 +144,6 @@ export default function Hobbies() {
             dynamicHeight={true}
             swipeable={true}
             showArrows={false}
-            interval={5000}
           >
             {mada_img.map((img) => {
               return (
@@ -168,7 +167,6 @@ export default function Hobbies() {
             dynamicHeight={true}
             swipeable={true}
             showArrows={false}
-            interval={5000}
           >
             {rando_img.map((img) => {
               return (
