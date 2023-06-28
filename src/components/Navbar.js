@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { LanguageContext } from "./LanguageContext";
 import { Link } from "react-router-dom";
 import { Switch } from "@mui/material";
 import ukFlag from "../images/ukFlag.png";
@@ -10,6 +11,8 @@ function Navbar() {
   const handleClick = () => setClick(!click);
 
   const closeMobileMenu = () => setClick(false);
+
+  const { language, switchLanguage } = useContext(LanguageContext);
 
   return (
     <>
@@ -34,7 +37,7 @@ function Navbar() {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Expériences
+                Experiences
               </Link>
             </li>
             <li className="nav-item">
@@ -47,9 +50,16 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <img src={frenchFlag} alt="fr" width={40}></img>
-              <Switch defaultChecked />
-              <img src={ukFlag} alt="eng" width={40}></img>
+              <img src={frenchFlag} alt="fr" width={40} />
+              <Switch
+                defaultChecked
+                onClick={() => {
+                  language === "en"
+                    ? switchLanguage("fr")
+                    : switchLanguage("en");
+                }}
+              />
+              <img src={ukFlag} alt="eng" width={40} />
             </li>
           </ul>
         </div>
