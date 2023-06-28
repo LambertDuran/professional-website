@@ -52,6 +52,14 @@
 .nav-item {
     height: 80px;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item:last-child{
+    position: absolute;
+    right: 1em;
 }
 
 .nav-links {
@@ -159,5 +167,9 @@
         background: #fff;
         color: #242424;
         transition: 250ms;
+    }
+
+    .nav-item:last-child{
+        position: unset;
     }
 }
