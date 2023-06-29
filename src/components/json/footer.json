@@ -1,0 +1,16 @@
+{
+    "fr":{
+        "title": "Site web développé en ReactJS",
+        "title2": "A propos",
+        "profession": "Ingénieur logiciel",
+        "age": "28 ans",
+        "title3": "Me contacter"
+    },
+    "en":{
+        "title": "Website developed in ReactJS",
+        "title2": "About",
+        "profession": "Software engineer",
+        "title3": "Contact me",
+        "age": "28 years old"
+    }
+}

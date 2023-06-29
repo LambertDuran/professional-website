@@ -1,10 +1,14 @@
-import pdfFile from "../../pdf/CV_Lambert_Duran.pdf";
+import pdfFileFr from "../../pdf/CV_Lambert_Duran_fr.pdf";
+import pdfFileEn from "../../pdf/CV_Lambert_Duran_en.pdf";
 
-import React, { useState } from "react";
+import { LanguageContext } from "../LanguageContext";
+import React, { useState, useContext } from "react";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack5";
 import "./Cv.css";
 
 const Cv = () => {
+  const { language } = useContext(LanguageContext);
+  const pdfFile = language === "fr" ? pdfFileFr : pdfFileEn;
   const [error, setError] = useState(null);
   const downloadStyle = {
     color: "#FFB200",
