@@ -1,0 +1,32 @@
+{
+    "fr":{
+        "title1" : "Lectures",
+        "lect1": "Très intéressé par l'actualité économique, sociale et géopolitique, je suis abonné au monde diplomatique.",
+        "lect2": "Passionné de romans d'aventure, mes auteurs favorits ont vécu le siècle dernier. J'ai toujours à mes côtés au moins un livre de Joseph Kessel, Nicolas Bouvier ou Henry de Montfreid.",
+        "title2": "Podcasts",
+        "pd1": "Emission sociologique de France Culture où les locuteurs détaillent un fait marquant de leur vie. 'Mon histoire d'amour durant le confinement', ou bien 'Le jour où j'ai assisté à un viol' en passant par 'Comment j'ai découvert un trésor', tous les sujets sont abordés, et sans tabout !",
+        "pd2": "Entretien par Patrick Pesnot de 'Monsieur X', ancien agent de la DGSE. Monsieur X revient sur des histoires d'espionnage et des affaires secrètes dans lesquelles se jouent l'histoire de nos démocraties !",
+        "pd3": "Chaîne YouTube recevant des journalistes, des diplomates, des lanceurs d'aleter etc .. Ils sont invités à s'exprimer sur des sujets d'actualité. Dans une société où le temps est compté, ce format d'entretien procure une grande bouffée d'air frais, les intervenants pouvant prendre la parole jusqu'à 4h sur le sujet qu'ils souhaitent !",
+        "pd4": "Une série 'Les others', des histoires et des aventures en pleine nature.",
+        "moto1": "J'ai acheté ma première moto à Madagascar, un peu par hasard. Antananarivo étant une ville atrocement embouteillée, il était nécessaire d'avoir un deux roues pour se déplacer. Donc c'est plutôt par besoin que par passion que j'ai commencé à rouler.",
+        "moto2" : "La suite est classique, je partais en week-end en moto avec des copains motards et la passion a été vite suscitée. Finalement en 2020, à la fin de mon contrat à Madagascar, je partais voyager tout seul avec ma bécane, pour faire le tour de l'île pendant les deux prochains mois.",
+        "title3" : "Randonnée",
+        "rando" : "Passionné de voyages en nature, la France est un remarquable terrain de jeu ! Durant mes escapades, j'ai eu l'occasion de faire quelques étapes du GR5 (Les Vosges), du GR34 (La Bretagne), du GR10 (Les Pyrénées) et du GR20 (La Corse).",
+        "musique" : "Je suis un grand fan de Techno. Que ce soit dans les transports, en travaillant, ou en faisant la fête, j'écoute du Amélie Lens, Laurent Garnier, Regal et pleins d'autres ! J'ai aussi un petit peu mixé, voici deux sets que j'ai enregistré avec ma MixTrack Pro sur Serrato!"
+    },
+    "en":{
+        "title1": "Lectures",
+        "lect1": "Very interested in economic, social, and geopolitical news, I am subscribed to Le Monde Diplomatique.",
+        "lect2": "Passionate about adventure novels, my favorite authors lived in the last century. I always have at least one book by Joseph Kessel, Nicolas Bouvier, or Henry de Montfreid by my side.",
+        "title2": "Podcasts",
+        "pd1": "Sociological program on France Culture where speakers detail a significant event in their life. From 'My Love Story during the Confinement' to 'The Day I Witnessed an Assault' and 'How I Discovered a Treasure', all topics are covered without taboos!",
+        "pd2": "Interview by Patrick Pesnot with 'Monsieur X', a former agent of the DGSE (French Intelligence Agency). Monsieur X shares stories of espionage and secret affairs that shape the history of our democracies!",
+        "pd3": "YouTube channel featuring journalists, diplomats, whistleblowers, and more. They are invited to speak about current topics. In a time-constrained society, this interview format provides a breath of fresh air, with participants allowed to speak for up to 4 hours on the subject of their choice!",
+        "pd4": "A series called 'Les Others,' featuring stories and adventures in the great outdoors.",
+        "moto1": "I bought my first motorcycle in Madagascar, somewhat by chance. Antananarivo being an incredibly congested city, having a two-wheeler was necessary for getting around. So, it was more out of necessity than passion that I started riding.",
+        "moto2": "The rest is a classic story. I went on weekend motorcycle trips with biker friends, and the passion quickly grew. In 2020, at the end of my contract in Madagascar, I embarked on a solo journey with my bike to tour the island for the next two months.",
+        "title3" : "Hiking",
+        "rando": "Passionate about nature travel, France is an outstanding playground! During my escapades, I had the opportunity to hike sections of the GR5 (Vosges), GR34 (Brittany), GR10 (Pyrenees), and GR20 (Corsica).",
+        "musique": "I'm a big fan of Techno music. Whether it's on public transportation, while working, or partying, I listen to artists like Amélie Lens, Laurent Garnier, Regal, and many others! I've also done a bit of DJ mixing, and here are two sets I recorded with my MixTrack Pro using Serato!"
+    }
+}

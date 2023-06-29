@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageContext } from "../LanguageContext";
+import translations from "../json/hobbies.json";
 import "../../App.css";
 import "./Hobbies.css";
 import lusageDuMonde from "../../images/lusageDuMonde.webp";
@@ -28,22 +30,16 @@ const mada_img = [moto1, moto2, moto3, moto4, moto5, moto6];
 const rando_img = [rando1, rando2, rando3, rando4, rando5];
 
 export default function Hobbies() {
+  const { language } = useContext(LanguageContext);
   return (
     <>
       <div className="hobbies-title-container">
-        <h1 className="hobbies-title"> Lectures </h1>
+        <h1 className="hobbies-title"> {translations[language].title1} </h1>
       </div>
       <div className="moto_container">
         <ul>
-          <li className="moto_li">
-            Très intéressé par l'actualité économique, sociale et géopolitique,
-            je suis abonné au monde diplomatique.
-          </li>
-          <li className="moto_li">
-            Passionné de romans d'aventure, mes auteurs favorits ont vécu le
-            siècle dernier. J'ai toujours à mes côtés au moins un livre de
-            Joseph Kessel, Nicolas Bouvier ou Henry de Montfreid.
-          </li>
+          <li className="moto_li">{translations[language].lect1}</li>
+          <li className="moto_li">{translations[language].lect2}</li>
         </ul>
         <div className="hobbies-img-container">
           <img
@@ -75,10 +71,7 @@ export default function Hobbies() {
         >
           Les pieds sur Terre :
         </a>{" "}
-        Emission sociologique de France Culture où les locuteurs détaillent un
-        fait marquant de leur vie. "Mon histoire d'amour durant le confinement",
-        ou bien "Le jour où j'ai assisté à un viol" en passant par "Comment j'ai
-        découvert un trésor", tous les sujets sont abordés, et sans tabout !
+        {translations[language].pd1}
       </div>
       <div className="hobbies-text">
         {"\u2022 "}
@@ -89,9 +82,7 @@ export default function Hobbies() {
         >
           Rendez-vous avec X :
         </a>{" "}
-        Entretien par Patrick Pesnot de 'Monsieur X', ancien agent de la DGSE.
-        Monsieur X revient sur des histoires d'espionnage et des affaires
-        secrètes dans lesquelles se jouent l'histoire de nos démocraties !
+        {translations[language].pd2}
       </div>
       <div className="hobbies-text">
         {"\u2022 "}
@@ -102,11 +93,7 @@ export default function Hobbies() {
         >
           Thinkerview :
         </a>{" "}
-        Chaîne YouTube recevant des journalistes, des diplomates, des lanceurs
-        d'aleter etc .. Ils sont invités à s'exprimer sur des sujets
-        d'actualité. Dans une société où le temps est compté, ce format
-        d'entretien procure une grande bouffée d'air frais, les intervenants
-        pouvant prendre la parole jusqu'à 4h sur le sujet qu'ils souhaitent !
+        {translations[language].pd3}
       </div>
       <div className="hobbies-text">
         {"\u2022 "}
@@ -117,26 +104,15 @@ export default function Hobbies() {
         >
           Les Baladeurs :
         </a>{" "}
-        Une série 'Les others', des histoires et des aventures en pleine nature.
+        {translations[language].pd4}
       </div>
       <div className="hobbies-title-container">
         <h1 className="hobbies-title"> Moto </h1>
       </div>
       <div className="moto_container">
         <ul>
-          <li className="moto_li">
-            J'ai acheté ma première moto à Madagascar, un peu par hasard.
-            Antananarivo étant une ville atrocement embouteillée, il était
-            nécessaire d'avoir un deux roues pour se déplacer. Donc c'est plutôt
-            par besoin que par passion que j'ai commencé à rouler.
-          </li>
-          <li className="moto_li">
-            La suite est classique, je partais en week-end en moto avec des
-            copains motards et la passion a été vite suscitée. Finalement en
-            2020, à la fin de mon contrat à Madagascar, je partais voyager tout
-            seul avec ma bécane, pour faire le tour de l'île pendant les deux
-            prochains mois.
-          </li>
+          <li className="moto_li">{translations[language].moto1}</li>
+          <li className="moto_li">{translations[language].moto2}</li>
         </ul>
         <div className="carousel_container">
           <Carousel
@@ -158,7 +134,7 @@ export default function Hobbies() {
         </div>
       </div>
       <div className="hobbies-title-container">
-        <h1 className="hobbies-title"> Randonnée </h1>
+        <h1 className="hobbies-title"> {translations[language].title3} </h1>
       </div>
       <div className="rando_container">
         <div className="carousel_container">
@@ -179,22 +155,12 @@ export default function Hobbies() {
             })}
           </Carousel>
         </div>
-        <div className="rando_text">
-          Passionné de voyages en nature, la France est un remarquable terrain
-          de jeu ! Durant mes escapades, j'ai eu l'occasion de faire quelques
-          étapes du GR5 (Les Vosges), du GR34 (La Bretagne), du GR10 (Les
-          Pyrénées) et du GR20 (La Corse).
-        </div>
+        <div className="rando_text">{translations[language].rando}</div>
       </div>
       <div className="hobbies-title-container">
         <h1 className="hobbies-title"> Musique </h1>
       </div>
-      <div className="music_text">
-        Je suis un grand fan de Techno. Que ce soit dans les transports, en
-        travaillant, ou en faisant la fête, j'écoute du Amélie Lens, Laurent
-        Garnier, Regal et pleins d'autres ! J'ai aussi un petit peu mixé, voici
-        deux sets que j'ai enregistré avec ma MixTrack Pro sur Serrato!
-      </div>
+      <div className="music_text">{translations[language].musique}</div>
       <div className="music_container">
         <AudioPlayer
           src={ambiantTechno}
