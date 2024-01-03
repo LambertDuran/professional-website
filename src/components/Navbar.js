@@ -10,7 +10,13 @@ function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
-  const closeMobileMenu = () => setClick(false);
+  const closeMobileMenu = () => {
+    setClick(false);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  };
 
   const { language, switchLanguage } = useContext(LanguageContext);
 
