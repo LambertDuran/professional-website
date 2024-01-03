@@ -17,11 +17,11 @@ import rando2 from "../../images/rando2.webp";
 import rando3 from "../../images/rando3.webp";
 import rando4 from "../../images/rando4.webp";
 import rando5 from "../../images/rando5.webp";
-import AudioPlayer from "../AudioPlayer";
-import ambiantTechno from "../../sounds/ambiantTechno.mp3";
-import industrialTechno from "../../sounds/industrial_Techno.mp3";
-import mountainSkyline from "../../images/mountainSkyline.jpg";
-import moon from "../../images/moon.jpg";
+// import AudioPlayer from "../AudioPlayer";
+// import ambiantTechno from "../../sounds/ambiantTechno.mp3";
+// import industrialTechno from "../../sounds/industrial_Techno.mp3";
+// import mountainSkyline from "../../images/mountainSkyline.jpg";
+// import moon from "../../images/moon.jpg";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -157,7 +157,7 @@ export default function Hobbies() {
         </div>
         <div className="rando_text">{translations[language].rando}</div>
       </div>
-      <div className="hobbies-title-container">
+      {/* <div className="hobbies-title-container">
         <h1 className="hobbies-title"> Musique </h1>
       </div>
       <div className="music_text">{translations[language].musique}</div>
@@ -172,7 +172,7 @@ export default function Hobbies() {
           title="#Industrial Techno"
           img={moon}
         />
-      </div>
+      </div> */}
     </>
   );
 }
