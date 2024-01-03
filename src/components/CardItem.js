@@ -1,10 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 function CardItem(props) {
+
+    const navigate = useNavigate();
+    
     return (
         <>
-            <li className="cards__item">
+            <li className="cards__item"
+                onClick={() => {
+                        navigate(props.path,{state: {targetId: props.targetId}})
+                    }}>
                 <Link 
                     className="cards__item__link"
                     to={props.path}>

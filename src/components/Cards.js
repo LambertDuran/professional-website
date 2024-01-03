@@ -24,6 +24,7 @@ function Cards() {
               text={translations[language].card3}
               label="Typescript / React / Node"
               path="/experiences"
+              targetId="dopm"
             />
           </ul>
           <ul className="cards__items">
@@ -32,12 +33,14 @@ function Cards() {
               text={translations[language].card4}
               label="Typescript / React / Node"
               path="/experiences"
+              targetId="bioponi"
             />
             <CardItem
               src={data_input}
               text={translations[language].card5}
               label="Typescript / React / Node"
               path="/experiences"
+              targetId="bioponi"
             />
           </ul>
           <ul className="cards__items">
@@ -46,12 +49,14 @@ function Cards() {
               text={translations[language].card1}
               label="C++ / 3D / Multi-threading / Modélisation"
               path="/experiences"
+              targetId="sogelink"
             />
             <CardItem
               src={cloud}
               text={translations[language].card2}
               label="C++ / 3D / PCL / Traitement de données"
               path="/experiences"
+              targetId="futurmap"
             />
           </ul>
           <ul className="cards__items">

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { LanguageContext } from "../LanguageContext";
 import "../../App.css";
 import "../pages/Experiences.css";
@@ -25,6 +25,7 @@ import affichageBassin from "../../images/affichageBassins.gif";
 import ficheJournaliere from "../../images/ficheJournaliere.gif";
 
 import translations from "../json/experiences.json";
+import { useLocation } from "react-router-dom";
 
 function ExperienceHeader(props) {
   return (
@@ -53,6 +54,17 @@ function TimeLine() {
 
 function Experiences() {
   const { language } = useContext(LanguageContext);
+
+  // Utiliser pour scroller sur la section qui a été cliquée sur la page d'accueil
+  const { state } = useLocation();
+  const { targetId } = state || {};
+  useEffect(() => {
+    const el = document.getElementById(targetId);
+    if (el) {
+      el.scrollIntoView({behavior: 'smooth'});
+    }
+  }, [targetId]);
+
   return (
     <>
       <ExperienceHeader
@@ -95,10 +107,12 @@ function Experiences() {
           </section>
         </div>
       </div>
-      <ExperienceHeader
-        date={translations[language].date3}
-        title={translations[language].title3}
-      />
+      <div id="futurmap">
+        <ExperienceHeader
+          date={translations[language].date3}
+          title={translations[language].title3}
+        />
+      </div>
       <div className="columns">
         <TimeLine />
         <div className="right">
@@ -159,10 +173,12 @@ function Experiences() {
           </section>
         </div>
       </div>
-      <ExperienceHeader
-        date={translations[language].date4}
-        title={translations[language].title4}
-      />
+      <div id="sogelink">
+        <ExperienceHeader
+          date={translations[language].date4}
+          title={translations[language].title4}
+        />
+      </div>
       <div className="columns">
         <TimeLine />
         <div className="right">
@@ -192,10 +208,12 @@ function Experiences() {
           </section>
         </div>
       </div>
-      <ExperienceHeader
-        date={translations[language].date5}
-        title={translations[language].title5}
-      />
+      <div id="dopm">
+        <ExperienceHeader
+          date={translations[language].date5}
+          title={translations[language].title5}
+        />
+      </div>
       <div className="columns">
         <TimeLine />
         <div className="right">
@@ -249,10 +267,12 @@ function Experiences() {
           </section>
         </div>
       </div>
-      <ExperienceHeader
-        date={translations[language].date6}
-        title={translations[language].title6}
-      />
+      <div id="bioponi">
+        <ExperienceHeader
+          date={translations[language].date6}
+          title={translations[language].title6}
+        />
+      </div>
       <div className="columns">
         <TimeLine />
         <div className="right">
