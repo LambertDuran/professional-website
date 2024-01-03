@@ -2,15 +2,17 @@
     "en" : {
         "title" : "Some Achievement examples !",
         "card1" : "Geological layers modelling from DTM",
-        "card2" : "Shape files import in AutoCAD",
-        "card3" : "Elastic image registration",
-        "card4" : "3D point clouds display"
+        "card2" : "3D point clouds display",
+        "card3" : "Graphic data Visualization",
+        "card4" : "Data input",
+        "card5" : "Grid data Visualization"
     },
     "fr" : {
         "title" : "Quelques exemples de réalisations !",
         "card1" : "Modélisation de couches géologiques à partir de MNT",
-        "card2" : "Import de fichiers shapes dans AutoCAD",
-        "card3" : "Recalage élastique d'images",
-        "card4" : "Affichage de nuages de points en 3D"
+        "card2" : "Affichage 3D de nuages de points",
+        "card3" : "Visualisation de données sous forme graphique",
+        "card4" : "Saisie de données",
+        "card5" : "Visualisation de données sous forme de grille"
     }
 }

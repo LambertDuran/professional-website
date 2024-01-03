@@ -7,8 +7,9 @@ import translations from "./json/cards.json";
 
 import couches_geo from "../images/couches_geo.gif";
 import cloud from "../images/cloud.webp";
-import recalage from "../images/cerveau.webp";
-import importShape from "../images/importShape.webp";
+import visu_data from "../images/visualisation_des_donnees.webp"
+import data_input from "../images/data_input.PNG"
+import data_grid from "../images/visualisation_grille.PNG"
 
 function Cards() {
   const { language } = useContext(LanguageContext);
@@ -19,31 +20,41 @@ function Cards() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src={couches_geo}
-              text={translations[language].card1}
-              label="C++ / 3D / Modélisation"
-              path="/experiences"
-            />
-            <CardItem
-              src={importShape}
-              text={translations[language].card2}
-              label="C++ / C / .shp / QGis / AutoCAD"
+              src={visu_data}
+              text={translations[language].card3}
+              label="Typescript / React / Node"
               path="/experiences"
             />
           </ul>
           <ul className="cards__items">
             <CardItem
-              src={recalage}
-              text={translations[language].card3}
-              label="C++ / Multi-threading / Recalage d'images / Méthode de gradients"
+              src={data_grid}
+              text={translations[language].card4}
+              label="Typescript / React / Node"
+              path="/experiences"
+            />
+            <CardItem
+              src={data_input}
+              text={translations[language].card5}
+              label="Typescript / React / Node"
+              path="/experiences"
+            />
+          </ul>
+          <ul className="cards__items">
+            <CardItem
+              src={couches_geo}
+              text={translations[language].card1}
+              label="C++ / 3D / Multi-threading / Modélisation"
               path="/experiences"
             />
             <CardItem
               src={cloud}
-              text={translations[language].card4}
+              text={translations[language].card2}
               label="C++ / 3D / PCL / Traitement de données"
               path="/experiences"
             />
+          </ul>
+          <ul className="cards__items">
           </ul>
         </div>
       </div>
