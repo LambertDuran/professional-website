@@ -103,16 +103,15 @@ function Experiences() {
               <a href={pfe_rapport} download="Recalage_Elastique.pdf">
                 {translations[language].bordeaux2}
               </a>
+              <div id="futurmap" style={{padding: '1em'}}/>
             </p>
           </section>
         </div>
       </div>
-      <div id="futurmap">
         <ExperienceHeader
           date={translations[language].date3}
           title={translations[language].title3}
         />
-      </div>
       <div className="columns">
         <TimeLine />
         <div className="right">
@@ -169,16 +168,15 @@ function Experiences() {
               {translations[language].mad15}
               <strong> {translations[language].mad16}</strong>{" "}
               {translations[language].mad17}
+            <div id="sogelink" style={{padding: '1em'}}/>
             </p>
           </section>
         </div>
       </div>
-      <div id="sogelink">
         <ExperienceHeader
           date={translations[language].date4}
           title={translations[language].title4}
         />
-      </div>
       <div className="columns">
         <TimeLine />
         <div className="right">
@@ -205,15 +203,14 @@ function Experiences() {
                 {translations[language].capt4}
               </figcaption>
             </figure>
+            <div id="dopm" style={{padding: '1em'}}/>
           </section>
         </div>
       </div>
-      <div id="dopm">
         <ExperienceHeader
           date={translations[language].date5}
           title={translations[language].title5}
         />
-      </div>
       <div className="columns">
         <TimeLine />
         <div className="right">
@@ -264,15 +261,14 @@ function Experiences() {
                 {translations[language].capt7}
               </figcaption>
             </figure>
+            <div id="bioponi" style={{padding: '1em'}}/>
           </section>
         </div>
       </div>
-      <div id="bioponi">
         <ExperienceHeader
           date={translations[language].date6}
           title={translations[language].title6}
         />
-      </div>
       <div className="columns">
         <TimeLine />
         <div className="right">
