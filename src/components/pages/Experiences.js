@@ -68,29 +68,6 @@ function Experiences() {
   return (
     <>
       <ExperienceHeader
-        date={translations[language].date1}
-        title={translations[language].title1}
-      />
-      <div className="columns">
-        <TimeLine />
-        <div className="right">
-          <section>
-            <img className="map" src={riga} alt="Localistation Riga"></img>
-            <p>{translations[language].riga1}</p>
-          </section>
-          <section>
-            <img className="pic_riga" src={riga2} alt="Riga, Lettonie"></img>
-            <p>{translations[language].riga2}</p>
-            <br></br>
-            <p>
-              {translations[language].riga3}
-              <strong>{translations[language].riga4}</strong>
-              {translations[language].riga5}
-            </p>
-          </section>
-        </div>
-      </div>
-      <ExperienceHeader
         date={translations[language].date2}
         title={translations[language].title2}
       />
@@ -100,8 +77,16 @@ function Experiences() {
           <section>
             <p>
               {translations[language].bordeaux1}
+              <strong>{translations[language].bordeaux101}</strong>
+              {translations[language].bordeaux102}
+              <strong>{translations[language].bordeaux2}</strong>
+              {translations[language].bordeaux3}
+              <strong>{translations[language].bordeaux4}</strong>
+              {translations[language].bordeaux5}
+              <strong>{translations[language].bordeaux6}</strong>
+              {translations[language].bordeaux7}
               <a href={pfe_rapport} download="Recalage_Elastique.pdf">
-                {translations[language].bordeaux2}
+                {translations[language].bordeaux8}
               </a>
               <div id="futurmap" style={{padding: '1em'}}/>
             </p>
@@ -149,6 +134,8 @@ function Experiences() {
               {translations[language].mad4}
               <strong> {translations[language].mad5}</strong>{" "}
               {translations[language].mad6}
+              <strong> {translations[language].mad601}</strong>
+              {translations[language].mad602}
             </p>
             <p>
               {"\u2022 "} {translations[language].mad7} <strong>PCL</strong>{" "}
@@ -184,6 +171,8 @@ function Experiences() {
             <p>
               {translations[language].paris1} <strong>Covadis</strong>
               {translations[language].paris2}
+              <strong>{translations[language].paris201}</strong>
+              {translations[language].paris202}
               <strong>{translations[language].paris3}</strong>
               {translations[language].paris4}
             </p>
@@ -215,9 +204,12 @@ function Experiences() {
         <TimeLine />
         <div className="right">
           <section>
-            <p>{translations[language].free1}</p>
-            <p>{translations[language].free2}</p>
-            <p>{translations[language].free3}</p>
+            <p>
+              {translations[language].free2}
+              <strong>{translations[language].free201}</strong>
+              {translations[language].free202}
+              {translations[language].free3}
+            </p>
             <figure>
               <img
                 src={def_indicator}
@@ -230,26 +222,18 @@ function Experiences() {
               </figcaption>
             </figure>
             <p>{translations[language].free4}</p>
-            <p>{translations[language].free5}</p>
             <figure>
               <img
                 src={data_fill}
                 alt="Saisie des données"
                 className="dopm"
                 caption="Saisie des données"
-              ></img>
+                ></img>
               <figcaption className="caption">
                 {translations[language].capt6}
               </figcaption>
             </figure>
-            <p>
-              Enfin la dernière étape est la visualisation des données. Pour
-              cela j'ai utilisé la librairie de visualisation de données
-              ChartJS. L'indicateur présenté est hebdomadaire, c'-à-d que les
-              données sont saisies chaque semaine. En fonction de si la valeur
-              cible a été atteinte les histogrammes ont une couleur verte ou
-              rouge.
-            </p>
+            <p>{translations[language].free5}</p>
             <figure>
               <img
                 src={indicateur_hebdo}
