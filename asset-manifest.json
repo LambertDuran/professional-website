@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/professional-website/static/css/main.cd00fac3.css",
-    "main.js": "/professional-website/static/js/main.c7b7ff1e.js",
+    "main.js": "/professional-website/static/js/main.e1996510.js",
     "static/media/geocouche.webp": "/professional-website/static/media/geocouche.3bec4ca87d2097458a81.webp",
     "static/media/couches_geo.gif": "/professional-website/static/media/couches_geo.37fd5f851013f0cc82ae.gif",
     "static/media/geocoupe.webp": "/professional-website/static/media/geocoupe.e1448b28995edae1c754.webp",
@@ -44,10 +44,10 @@
     "static/media/pcl.webp": "/professional-website/static/media/pcl.c6a70c09a4989b8790fe.webp",
     "index.html": "/professional-website/index.html",
     "main.cd00fac3.css.map": "/professional-website/static/css/main.cd00fac3.css.map",
-    "main.c7b7ff1e.js.map": "/professional-website/static/js/main.c7b7ff1e.js.map"
+    "main.e1996510.js.map": "/professional-website/static/js/main.e1996510.js.map"
   },
   "entrypoints": [
     "static/css/main.cd00fac3.css",
-    "static/js/main.c7b7ff1e.js"
+    "static/js/main.e1996510.js"
   ]
 }
